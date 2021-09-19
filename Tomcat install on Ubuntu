@@ -1,1 +1,14 @@
-To install tomcat on ubuntu:  https://www.tecmint.com/install-apache-tomcat-in-ubuntu/
+1.  To install tomcat on ubuntu:  https://www.tecmint.com/install-apache-tomcat-in-ubuntu/
+2.  Run a shell from Jenkins using sudo (Ubuntu) - https://sgoyal.net/2016/11/18/run-a-shell-from-jenkins-using-sudo-ubuntu/
+        Below are the steps to achieve this.
+        #1 open /etc/sudoers
+        type sudo vi  /etc/sudoers. This will open your file in edit mode.
+        
+        #2 Add/Modify jenkins user
+        Look for the entry for jenkins user. Modify as below if found or add a new line.
+        jenkins ALL=(ALL) NOPASSWD: ALL
+
+        #3 Save and Exit from edit mode
+
+        Press ESC and type :wq and hit Enter. or :wq! in case read only
+        Please try to re-run you Jenkins job. 
